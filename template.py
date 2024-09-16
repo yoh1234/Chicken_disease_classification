@@ -1,6 +1,6 @@
 import os
 from pathlib import Path
-import logging
+from src.logger import logging
 from datetime import datetime
 
 # LOG_FILE = f"{datetime.now().strftime('%m_%d_%Y_%H_%M_%S')}.log"
@@ -20,13 +20,15 @@ project_name = "CNN_Classifier"
 
 list_of_files = [
     ".github/workflows/.gitkeep" ##create gitkeep to keep file when commit
-    f"src/{project_name}/__init__.py",
-    f"src/{project_name}/components/__init__.py",
-    f"src/{project_name}/utils/__init__.py",
-    f"src/{project_name}/config/configuration.py",
-    f"src/{project_name}/pipeline/__init__.py",
-    f"src/{project_name}/entity/__init__.py",
-    f"src/{project_name}/constants/__init__.py",
+    "src/__init__.py",
+    "src/exception.py",
+    "src/logger.py",
+    "src/components/__init__.py",
+    "src/utils/__init__.py",
+    "src/config/configuration.py",
+    "src/pipeline/__init__.py",
+    "src/entity/__init__.py",
+    "src/constants/__init__.py",
     "config/config.yaml",
     "dvc.yaml",
     "params.yaml",
