@@ -180,6 +180,6 @@ def unique_random_int_generator(min:int, max:int, num_data:int):
     
     return random.sample(range(min, max+1), num_data)
 
-if __name__ == "__main__":
+# if __name__ == "__main__":
     
-    copy_random_imgfiles(src_dir="Bottle Images", dest_dir="Img", num_img=500)
+#     copy_random_imgfiles(src_dir="Bottle Images", dest_dir="raw_img", num_img=500)
