@@ -10,7 +10,7 @@ import sys
 @dataclass
 class DataIngestionConfig:
     src_path: str = "Bottle Images"
-    dest_path: str = "raw_img"
+    dest_path: str = os.path.join("artifacts","raw_img")
 
 class DataIngestion:
     def __init__(self):

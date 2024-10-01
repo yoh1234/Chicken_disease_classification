@@ -164,4 +164,4 @@ cython_debug/
 
 # directory
 /Bottle Images
-/raw_img
+/artifacts
