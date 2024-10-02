@@ -4,15 +4,15 @@ from src.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
 from src.pipeline.stage_02_prepare_model import PrepareModelPipeline
 import sys
 
-# STAGE_NAME = "Data Ingestion Stage" 
-# try:
-#     logging.info(f">>>>>>>>>> stage 01: {STAGE_NAME} started <<<<<<<<<<")
-#     data_ingestion = DataIngestionTrainingPipeline()
-#     data_ingestion.main()
-#     logging.info(f">>>>>>>>>> stage 01: {STAGE_NAME} completed <<<<<<<<<<")
+STAGE_NAME = "Data Ingestion Stage" 
+try:
+    logging.info(f">>>>>>>>>> stage 01: {STAGE_NAME} started <<<<<<<<<<")
+    data_ingestion = DataIngestionTrainingPipeline()
+    data_ingestion.main()
+    logging.info(f">>>>>>>>>> stage 01: {STAGE_NAME} completed <<<<<<<<<<")
 
-# except Exception as e:
-#     raise CustomException(e, sys)
+except Exception as e:
+    raise CustomException(e, sys)
 
 STAGE_NAME = "Prepare transfered CNN model"
 try:
