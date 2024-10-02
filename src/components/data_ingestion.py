@@ -5,6 +5,7 @@ from dataclasses import dataclass
 import os
 import sys
 
+
 # Extract random image data for training and testing from source directory
 
 @dataclass
